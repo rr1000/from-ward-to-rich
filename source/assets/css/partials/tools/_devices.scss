@@ -1,0 +1,87 @@
+@media all and(max-width: 1100px){
+	.crest{
+		height: 371px;
+		width: 850px;
+		background-size: 850px 371px;
+	}
+}
+@media all and(max-width: 900px){
+	.crest{
+		height: 284px;
+		width: 650px;
+		background-size: 650px 284px;
+	}
+}
+@media handheld, only screen and (max-width: 767px){
+	.grid{
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	[class*='col-']{
+		width: auto;
+		float: none;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media all and(max-width: 700px){
+	.crest{
+		height: 197px;
+		width: 450px;
+		background-size: 450px 197px;
+	}
+}
+@media all and(max-width: 630px){
+	.main-header{
+		padding: 0px;
+		a.logo{
+			float: none;
+			margin: 20px auto;
+			&:before{
+				left: 20px;
+				top: -4px;
+			}
+			span{
+				display: block;
+				text-align: center;
+				padding: 0px;
+			}
+		}
+		nav{
+			float: none;
+			a{
+				margin: 0px;
+				display: block;
+				padding: 10px 20px;
+				background-color: rgba(0,0,0,0.1);
+				border-bottom: 1px solid rgba(0,0,0,0.5);
+				text-align: center;
+				&:first-of-type{border-top: 1px solid rgba(0,0,0,0.5);}
+			}
+		}
+	}
+}
+@media all and(max-width: 600px){
+	.crest{
+		margin: 70px auto;
+		background: url('../img/crest_small.png');
+		height: 461px;
+		width: 373px;
+		background-size: 373px 461px;
+	}
+}
+@media all and(max-width: 500px){
+	.crest{
+		height: 293px;
+		width: 250px;
+		background-size: 250px 293px;
+	}
+}

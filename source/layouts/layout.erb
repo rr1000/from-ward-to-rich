@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<!-- Set title to current page title -->
-		<title><%= current_page.data.title || "Kara & Ryan Are Getting Married" %></title>
-		<meta name="description" content="Kara & Ryan Are Getting Married">
-		<!-- Set keyword content to current post keywords data -->
-		<meta name="keywords" content="<%= current_page.data.keywords %>">
-		<meta property="og:description" content="<%= current_page.data.summary %>">
-		<meta property="og:title" content="Kara & Ryan Are Getting Married" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://fromwardtorich.com" />
-		<meta property="og:image" content="/assets/img/logo.png" />
-		<meta property="og:locale" content="en_US">
-		<link rel="icon" type="image/png" href="/favicon.png">
-		<%= stylesheet_link_tag "styles" %>
-		<%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
-	</head>
-	<body class="<%= page_classes %>">
-		<%= yield %>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+        <!-- Set title to current page title -->
+        <title><%= current_page.data.title || "Kara & Ryan Are Getting Married" %></title>
+        <meta name="description" content="Kara & Ryan Are Getting Married">
+        <!-- Set keyword content to current post keywords data -->
+        <meta name="keywords" content="<%= current_page.data.keywords %>">
+        <meta property="og:description" content="<%= current_page.data.summary %>">
+        <meta property="og:title" content="Kara & Ryan Are Getting Married" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://fromwardtorich.com" />
+        <meta property="og:image" content="/assets/img/logo.png" />
+        <meta property="og:locale" content="en_US">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <%= stylesheet_link_tag "styles" %>
+        <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
+    </head>
+    <body class="<%= page_classes %>">
+        <%= yield %>
+    </body>
 </html>

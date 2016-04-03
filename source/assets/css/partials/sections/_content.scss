@@ -2,7 +2,7 @@
 body{font-size: 14px;background-color: $c_b-dark;a{text-decoration: none}}
 .main-header{
     background-color: rgba(0,0,0,0.2);
-    padding: 20px 20px 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
     @extend .cf;
     a.logo{
         display: block;
@@ -13,11 +13,12 @@ body{font-size: 14px;background-color: $c_b-dark;a{text-decoration: none}}
         letter-spacing: 3px;
         font-weight: 600;
         position: relative;
+        padding: 20px 10px;
         z-index: 1;
         span{display: inline-block;padding: 2px 0px 0px 30px;}
         &:before{
             z-index: 2;
-            top: 0px;
+            top: 18px;
             left: 0px;
             position: absolute;
             content: '';
@@ -32,13 +33,15 @@ body{font-size: 14px;background-color: $c_b-dark;a{text-decoration: none}}
     nav{
         float: right;
         a{
-            font-size: 12px;
+            font-size: 14px;
             display: inline-block;
             color: #fff;
-            margin: 0px 0px 0px 20px;
             padding-bottom: 5px;
+            font-weight: 300;
+            padding: 20px 10px;
             border-bottom: 1px solid transparent;
             &:first-of-type{margin: 0px;}
+            &:last-of-type{padding: 20px 0px 20px 10px;}
             @include easing(350ms);
             &:hover{
                 @include easing(350ms);
@@ -171,4 +174,31 @@ body{font-size: 14px;background-color: $c_b-dark;a{text-decoration: none}}
     background-color: #fff;
     border-radius: 5px;
     font-size: 20px;
+}
+// Footer
+footer.main-footer{
+    margin: 0px 0px 30px 0px;
+    div.hr{
+        width: 150px;
+        height: 2px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 30px auto;
+    }
+    nav{
+        text-align: center;
+        a{
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0px 5px;
+            @include easing(350ms);
+            &:hover{
+                @include easing(350ms);
+                color: rgba(255,255,255,0.5);
+            }
+        }
+    }
 }
